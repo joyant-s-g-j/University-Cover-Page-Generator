@@ -10,7 +10,7 @@ const items = [
   "Ensure all information is correct before submitting"
 ]
 
-const Form = () => {
+const Form = ({ onFormDataChange }) => {
   return (
     <Box 
       mt={{base: "32", lg: "0"}} 
@@ -36,7 +36,7 @@ const Form = () => {
               </List.Item>
             ))}
           </List.Root>
-          <DialogForm />
+          <DialogForm onFormDataChange={onFormDataChange} />
       </motion.div>
     </Box>
   )

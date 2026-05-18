@@ -4,6 +4,7 @@ import adust from "../assets/adust.png"
 import seu from "../assets/seu.png"
 import uiu from "../assets/uiu.png"
 import iubat from "../assets/iubat.png"
+import cuet from '../assets/cuet.png'
 import { useMediaQuery } from '@chakra-ui/react'
 
 Font.register({
@@ -16,6 +17,7 @@ const universities = {
   seu: { name: 'South East University', logo: seu },
   uiu: { name: 'United International University', logo: uiu },
   iubat: { name: 'International University of Business Agriculture and Technology', logo: iubat },
+  cuet: { name: 'Chittagong University of Engineering and Technology', logo: cuet }
 };
 
 const styles = StyleSheet.create({

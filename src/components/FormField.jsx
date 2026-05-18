@@ -13,11 +13,10 @@ const universities = [
     { id: 'cuet', name: 'Chittagong University of Engineering and Technology', logo: 'cuet.png' }
 ];
 
-const FormField = () => {
+const FormField = ({ onFormDataChange }) => {
     const [formData, setFormData] = useState({})
     const [readyToDownload, setReadyToDownload] = useState(false)
     const [isDialogOpen, setIsDialogOpen] = useState(false)
-    const [isDownloaded, setIsDownloaded] = useState(false);
     const navigate = useNavigate()
     const designations = [
         'Lecturer',
@@ -87,13 +86,13 @@ const FormField = () => {
             return;
         }
         console.log('Submitted formData:', inputData);
-        setFormData(inputData)
+                setFormData(inputData)
+                onFormDataChange?.(inputData)
         setReadyToDownload(true)
         setIsDialogOpen(true)
     }
 
     const handleDownloadClick = () => {
-        setIsDownloaded(true);
         setTimeout(() => {
           toaster.success({ title: 'PDF downloaded successfully' });
           setTimeout(() => {

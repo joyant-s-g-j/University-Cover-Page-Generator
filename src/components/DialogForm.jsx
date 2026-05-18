@@ -3,7 +3,7 @@ import { Clipboard } from 'lucide-react'
 import React from 'react'
 import FormField from './FormField'
 
-const DialogForm = () => {
+const DialogForm = ({ onFormDataChange }) => {
   return (
     <Dialog.Root size="cover" placement="center" motionPreset="slide-in-bottom"> 
         <Dialog.Trigger asChild>
@@ -36,7 +36,7 @@ const DialogForm = () => {
                         </Dialog.CloseTrigger>
                     </Dialog.Header>
                     <Dialog.Body>
-                        <FormField />
+                        <FormField onFormDataChange={onFormDataChange} />
                     </Dialog.Body>
                 </Dialog.Content>
             </Dialog.Positioner>
