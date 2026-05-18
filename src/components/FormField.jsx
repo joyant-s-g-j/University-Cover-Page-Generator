@@ -10,6 +10,7 @@ const universities = [
     { id: 'seu', name: 'South East University', logo: 'seu.png' },
     { id: 'uiu', name: 'United International University', logo: 'uiu.png' },
     { id: 'iubat', name: 'International University of Business Agriculture and Technology', logo: 'iubat.png' },
+    { id: 'cuet', name: 'Chittagong University of Engineering and Technology', logo: 'cuet.png' }
 ];
 
 const FormField = () => {

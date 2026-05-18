@@ -1,6 +1,6 @@
 import { Box, Button, Icon, Image, Text } from '@chakra-ui/react'
 import React from 'react'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 import heroimage from '../assets/heroImage.jpg'
 import { Link } from 'react-router-dom';
 import { PlusIcon, User } from 'lucide-react';

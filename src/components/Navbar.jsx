@@ -1,10 +1,10 @@
 import { Box, Flex, Icon, Text } from '@chakra-ui/react'
 import React from 'react'
+import { motion } from 'framer-motion'
 import { FileText } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import DesktopNavbar from './DesktopNavbar'
 import MobileNavbar from './MobileNavbar'
-import { motion } from 'framer-motion'
 
 const Navbar = () => {
   return (
